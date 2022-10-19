@@ -1,0 +1,13 @@
+services:
+    redis: 
+        image: redislabs/redismod
+        ports:
+            - '6379:6379' 
+    redisinsight:
+        image: redislabs/redisinsight:latest
+        ports:
+            - '8001:8001'
+    web:
+        ports:
+            - "5000:5000"
+        image: "app_image"
