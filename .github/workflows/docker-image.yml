@@ -19,7 +19,7 @@ jobs:
     - name: Docker compose
       run: docker-compose up -d
     - name: test Version
-      run: curl localhost:5000/version
+      run: docker exec -i client curl -I localhost:3001/version
       
     
     
