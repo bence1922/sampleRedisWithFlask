@@ -19,7 +19,7 @@ jobs:
     - name: Docker compose
       run: docker-compose up -d
     - name: test Version
-      run: docker exec -i samplerediswithflask_web_1 curl -I localhost:5000/version
+      run: curl localhost:5000/version
       
     
     
