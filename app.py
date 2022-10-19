@@ -16,7 +16,10 @@ def increment():
 
 @app.route('/counter')
 def printCounter():
-    counter = str(redis.get('counter'),'utf-8')
+    try:
+        counter = str(redis.get('counter'),'utf-8')
+    except Exception as re:
+        return "the key does not exist"
     return {
         "counter" : counter,
     }
