@@ -6,7 +6,9 @@ I used Ubuntu 20.04.1 with WSL2, and I used VS Code for coding.
 
 # Screenshots
 After the command, you can see that the two containers are running.
+
 ![Screenshot 1.](screenshots/dockerContainers.PNG)
+
 ```
 workstation@DESKTOP-LS3KC80:~/sampleRedisWithFlask$ docker ps
 CONTAINER ID   IMAGE                COMMAND                  CREATED         STATUS         PORTS                                       NAMES
